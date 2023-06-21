@@ -1,0 +1,13 @@
+steps:
+  integrationArtifactDeploy:
+    cpiApiServiceKeyCredentialsId: openSAP-Tenant
+    integrationFlowId: openSAP-SampleFlow
+  integrationArtifactGetMplStatus:
+    cpiApiServiceKeyCredentialsId: openSAP-Tenant
+    integrationFlowId: openSAP-SampleFlow
+  integrationArtifactUpload:
+    cpiApiServiceKeyCredentialsId: openSAP-Tenant
+    integrationFlowId: openSAP-SampleFlow
+    integrationFlowName: openSAP-SampleFlow
+    packageId: CICD
+    filePath: openSAP-SampleFlow.zip
