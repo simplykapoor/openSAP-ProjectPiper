@@ -2,11 +2,11 @@
 
 node() {
   stage('init') {
-    deleteDir()
+    	deleteDir()
 	checkout scm
 	def folder = "openSAP-SampleFlow";
-    def filePath = folder + ".zip";
-    zip dir: folder, glob: '', zipFile: filePath;
+    	def filePath = folder + ".zip";
+    	zip dir: folder, glob: '', zipFile: filePath;
   }
   stage('Upload, Deploy and Get MPL Status of Integration Artifact') {
   	setupCommonPipelineEnvironment script: this
