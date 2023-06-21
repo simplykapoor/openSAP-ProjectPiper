@@ -13,6 +13,7 @@ node() {
 	integrationArtifactUpload script: this
      	integrationArtifactDeploy script: this
 	integrationArtifactGetMplStatus script: this
-	print "MPL Status:" commonPipelineEnvironment.getValue("integrationFlowMplStatus")
+	print "MPL Status:" 
+	print commonPipelineEnvironment.getValue("integrationFlowMplStatus")
   }
 }
